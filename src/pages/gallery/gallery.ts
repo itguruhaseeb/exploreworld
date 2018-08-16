@@ -12,8 +12,10 @@ export class GalleryPage {
 
   }
 
-  showDetail(){
-    this.navCtrl.push( DetailPage );
+  showDetail( city ){
+    this.navCtrl.push( DetailPage, {
+      data: city
+    });
   }
 
 }
